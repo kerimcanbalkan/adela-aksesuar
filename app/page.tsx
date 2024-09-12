@@ -1,7 +1,11 @@
 import LandingHero from "@/components/layout/LandingHero";
+import ProductList from "@/components/product/ProductList";
 
 export default function Home() {
   return (
-    <LandingHero />
+    <div>
+      <LandingHero />
+      <ProductList />
+    </div>
   );
 }

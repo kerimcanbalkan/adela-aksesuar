@@ -16,6 +16,7 @@ const config: Config = {
       },
       backgroundImage: {
         'hero': "url('/background.jpg')",
+        'product': "url('/products/sarap.png')",
       },
     },
   },
