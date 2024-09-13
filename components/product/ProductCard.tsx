@@ -2,17 +2,17 @@
 import Image from "next/image";
 
 type CardProps = {
+	id: number,
 	img: string,
 	title: string,
 	category: string,
 	price: number,
 	className?: string,
-	link: string,
 };
 
-export default function ProductCard({ img, title, price, category, link, className = "" }: CardProps) {
+export default function ProductCard({ id, img, title, price, category, className = "" }: CardProps) {
 	return (
-		<a href={link} className={`${className} flex flex-col`} id="card">
+		<a href={`#${id}`} className={`${className} flex flex-col`} id="card">
 			<Image
 				src={`/${img}`}
 				width={150}

@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "img": "sarap.png",
+    "title": "Sarap Kadehi Mum",
+    "category": "Mum",
+    "price": 250
+  },
+  {
+    "id": 2,
+    "img": "yuzuk.png",
+    "title": "Kus Tuyu Yuzuk",
+    "category": "Aksesuar",
+    "price": 150
+  },
+  {
+    "id": 3,
+    "img": "kupe.jpeg",
+    "title": "Burgu Asimetrik Kupe",
+    "category": "Aksesuar",
+    "price": 100
+  },
+  {
+    "id": 4,
+    "img": "mum.jpeg",
+    "title": "Coklu Cicekli Mum",
+    "category": "Mum",
+    "price": 200
+  }
+]
+
