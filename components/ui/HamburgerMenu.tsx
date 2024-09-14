@@ -34,10 +34,14 @@ export default function HamburgerMenu() {
 					${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'} `}
 				onClick={() => setIsOpen(!isOpen)}
 			>
-				<a href="#" className="text-primaryText my-2 hover:text-primary">Anasayfa</a>
-				<a href="#" className="text-primaryText my-2 hover:text-primary">Hakkimizda</a>
-				<a href="#" className="text-primaryText my-2 hover:text-primary">Mumlar</a>
-				<a href="#" className="text-primaryText my-2 hover:text-primary">Takilar</a>
+				<a href="#Anasayfa" className="text-primaryText my-2 hover:text-primary">Anasayfa</a>
+				<a href="#Mum" className="text-primaryText my-2 hover:text-primary">Mum</a>
+				<a href="#Yuzuk" className="text-primaryText my-2 hover:text-primary">Yüzük</a>
+				<a href="#Kolye" className="text-primaryText my-2 hover:text-primary">Kolye</a>
+				<a href="#Bijuteri" className="text-primaryText my-2 hover:text-primary">Bijuteri</a>
+				<a href="#Kupe" className="text-primaryText my-2 hover:text-primary">Küpe</a>
+				<a href="#Bileklik" className="text-primaryText my-2 hover:text-primary">Bileklik</a>
+				<a href="#Iletisim" className="text-primaryText my-2 hover:text-primary">İletişim</a>
 			</div>		</div>
 	);
 }
