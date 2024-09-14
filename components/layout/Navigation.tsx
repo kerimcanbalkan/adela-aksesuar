@@ -6,7 +6,7 @@ import CartIcon from "../ui/CartIcon";
 
 export default function Navigation() {
 	return (
-		<header className="container flex justify-between p-6">
+		<nav className="flex justify-between p-6">
 			<HamburgerMenu />
 			<a href="/">
 				<Logo />
@@ -15,6 +15,6 @@ export default function Navigation() {
 				<CartIcon />
 
 			</a>
-		</header>
+		</nav>
 	)
 }

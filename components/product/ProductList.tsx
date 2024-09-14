@@ -28,7 +28,7 @@ export default function ProductList() {
 	}
 
 	return (
-		<div className="container p-5 flex flex-wrap gap-5 justify-center">
+		<div className="p-5 flex flex-wrap gap-5 justify-center">
 			{products.map((product) => (
 				<ProductCard
 					key={product.id}
