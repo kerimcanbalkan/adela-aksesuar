@@ -15,8 +15,8 @@ const config: Config = {
         'secondaryText': "var(--secondary-text)",
       },
       backgroundImage: {
-        'hero': "url('/background2.jpeg')",
-        'big-hero': "url('/bg2.jpeg')",
+        'hero': "url('/hero-mobile.jpeg')",
+        'big-hero': "url('/hero.jpg')",
       },
     },
   },
