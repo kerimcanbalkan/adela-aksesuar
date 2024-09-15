@@ -12,7 +12,7 @@ type CardProps = {
 
 export default function ProductCard({ id, img, title, price, category, className = "" }: CardProps) {
 	return (
-		<a href={`#${id}`} className={`${className} flex flex-col `} id="card">
+		<a href={`#${id}`} className={`${className} flex flex-col p-0`} id="card">
 			<Image
 				src={`/${img}`}
 				width={150}

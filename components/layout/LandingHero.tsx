@@ -1,5 +1,5 @@
 import { Italianno } from 'next/font/google'
-import Button from '../ui/Button';
+import CustomButton from '../ui/CustomButton';
 
 const itallianno = Italianno({
 	weight: '400',
@@ -16,7 +16,7 @@ export default function LandingHero() {
 				El Yapımı Mumlar<br />
 				Şık Tasarım Aksesuarlar
 			</p>
-			<Button className="relative z-10 mt-4 sm:text-xl" text={"Alisverise Basla!"} />
+			<CustomButton className="relative z-10 mt-4 sm:text-xl" text={"Alisverise Basla!"} theme="secondary" />
 		</section >
 	);
 }
