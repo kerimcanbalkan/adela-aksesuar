@@ -1,5 +1,5 @@
-
 import Image from "next/image";
+import Link from "next/link";
 
 type CardProps = {
 	id: number,
@@ -12,7 +12,7 @@ type CardProps = {
 
 export default function ProductCard({ id, img, title, price, category, className = "" }: CardProps) {
 	return (
-		<a href={`#${id}`} className={`${className} flex flex-col p-0`} id="card">
+		<Link href={`product/${id}`} className={`${className} flex flex-col p-0`} id="card">
 			<Image
 				src={`/${img}`}
 				width={150}
@@ -25,7 +25,7 @@ export default function ProductCard({ id, img, title, price, category, className
 				<p className="text-secondaryText text-sm">{category}</p>
 				<p className="text-primaryText text-right">{`${price}₺`}</p>
 			</div>
-		</a>
+		</Link>
 	);
 }
 

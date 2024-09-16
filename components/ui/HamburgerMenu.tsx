@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 export default function HamburgerMenu() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -7,7 +8,7 @@ export default function HamburgerMenu() {
 	return (
 		<div className="sm:hidden">
 			<button
-				className="fixed flex flex-col h-6 w-6 justify-center items-center group z-50"
+				className="absolute flex flex-col h-6 w-6 justify-center items-center group z-50"
 				onClick={() => setIsOpen(!isOpen)}
 			>
 				<div
@@ -34,14 +35,14 @@ export default function HamburgerMenu() {
 					${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'} `}
 				onClick={() => setIsOpen(!isOpen)}
 			>
-				<a href="#Anasayfa" className="text-primaryText my-2 hover:text-primary">Anasayfa</a>
-				<a href="#Mum" className="text-primaryText my-2 hover:text-primary">Mum</a>
-				<a href="#Yuzuk" className="text-primaryText my-2 hover:text-primary">Yüzük</a>
-				<a href="#Kolye" className="text-primaryText my-2 hover:text-primary">Kolye</a>
-				<a href="#Bijuteri" className="text-primaryText my-2 hover:text-primary">Bijuteri</a>
-				<a href="#Kupe" className="text-primaryText my-2 hover:text-primary">Küpe</a>
-				<a href="#Bileklik" className="text-primaryText my-2 hover:text-primary">Bileklik</a>
-				<a href="#Iletisim" className="text-primaryText my-2 hover:text-primary">İletişim</a>
+				<Link href="/" className="text-primaryText my-2 hover:text-primary">Anasayfa</Link>
+				<Link href="#Mum" className="text-primaryText my-2 hover:text-primary">Mum</Link>
+				<Link href="#Yuzuk" className="text-primaryText my-2 hover:text-primary">Yüzük</Link>
+				<Link href="#Kolye" className="text-primaryText my-2 hover:text-primary">Kolye</Link>
+				<Link href="#Bijuteri" className="text-primaryText my-2 hover:text-primary">Bijuteri</Link>
+				<Link href="#Kupe" className="text-primaryText my-2 hover:text-primary">Küpe</Link>
+				<Link href="#Bileklik" className="text-primaryText my-2 hover:text-primary">Bileklik</Link>
+				<Link href="#Iletisim" className="text-primaryText my-2 hover:text-primary">İletişim</Link>
 			</div>		</div>
 	);
 }
